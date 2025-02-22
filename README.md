@@ -21,9 +21,9 @@ hardware appliances)
 Please consider the following advice if using this package:
 
 * Carefully read and understand the section [Words of Caution ‒ or why you should not use this package](#words-of-caution--or-why-you-should-not-use-this-package)
-  * Without update of your Go Module depencies, rebuilding and redeploying of your programm, there is no update to the
+  * Without update of your Go Module dependencies, rebuilding and redeploying of your program, there is no update to the
   embedded root certificates.
-* Do not include this package in any library package. This package should only be included in package main of programs.
+* Do not include this package in any library package. This package should only be included in package `main` of programs.
 
 The functionality of this package is proposed for inclusion into the Go standard library in [#43958](https://github.com/golang/go/issues/43958).
 
@@ -78,7 +78,7 @@ The following two properties of Go make it a really good candidate for building 
 
 ## Trustworthiness of the Mozilla Included CA Certificate List
 
-Most operating systems as well as web browsers include a list of certificate authorities and the corrosponding
+Most operating systems as well as web browsers include a list of certificate authorities and the corresponding
 root certificates that are trusted by default. Some major software vendors operate their own [root programs] and
 so does the Mozilla Foundation for their well known products like the [Firefox] web browser or [Thunderbird] email
 client.
@@ -162,11 +162,11 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[`crypto/x509`]: https://golang.org/pkg/crypto/x509/
+[`crypto/x509`]: https://pkg.go.dev/crypto/x509/
 [Mozilla Included CA Certificate List]: https://wiki.mozilla.org/CA/Included_Certificates
 [PEM of Root Certificates in Mozilla's Root Store with the Websites (TLS/SSL) Trust Bit Enabled]: https://ccadb-public.secure.force.com/mozilla/IncludedRootsPEMTxt?TrustBitsInclude=Websites
 [root programs]: https://en.wikipedia.org/wiki/Public_key_certificate#Root_programs
 [Firefox]: https://www.mozilla.org/en-US/firefox/
 [Thunderbird]: https://www.thunderbird.net/en-US/
 [Common CA Database]: https://www.ccadb.org/
-[`time/tzdata`]: https://golang.org/pkg/time/tzdata/
+[`time/tzdata`]: https://pkg.go.dev/time/tzdata/
